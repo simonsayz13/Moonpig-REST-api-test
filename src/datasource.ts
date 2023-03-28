@@ -13,7 +13,7 @@ export const getTemplateData = (): Promise<AxiosResponse<[Template], any>> => {
   );
 };
 
-export const getSizesData = () => {
+export const getSizesData = (): Promise<AxiosResponse<[Sizes], any>> => {
   return axios.get(
     "https://moonpig.github.io/tech-test-node-backend/sizes.json"
   );

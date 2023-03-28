@@ -48,7 +48,7 @@ app.get(
       return res.status(404).send({ error: "Card not found" });
     }
 
-    if (chosenCard && !sizes.find((sizes: Sizes) => sizes.id === sizeId)) {
+    if (sizeId && !sizes.find((sizes: Sizes) => sizes.id === sizeId)) {
       return res.status(404).send({ error: "Size not found" });
     }
 
